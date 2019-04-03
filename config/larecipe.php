@@ -52,7 +52,7 @@ return [
 
     'settings' => [
         'auth'  => false,
-        'ga_id' => 'UA-77225511-3'
+        'ga_id' => env('GOOGLE_ANALYTICS_ID', null)
     ],
 
     /*
