@@ -76,7 +76,7 @@ Released 2018-05-29
 - Updated documentation
 
 ### Added 3.0.2
-- Added [demos](https://rawilk.github.io/vue-context) for the component.
+- Added [demos](https://vue-context.randallwilk.com) for the component.
 
 <a name="3.0.0"></a>
 ## [3.0.0](https://github.com/rawilk/vue-context/releases/tag/3.0.0)
