@@ -14,7 +14,7 @@
         <h5 class="my-4">
             Selected colors:
         </h5>
-        <code class="d-block mb-3">{{ selectedColors }}</code>
+        <code class="d-block mb-3" style="line-height:35px">{{ selectedColors }}</code>
 
         <vue-context ref="menu">
             <ul slot-scope="child" v-if="child.data">

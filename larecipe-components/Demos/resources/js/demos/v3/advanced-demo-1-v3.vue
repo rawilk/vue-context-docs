@@ -11,6 +11,15 @@
             </tbody>
         </table>
 
+        <div class="my-4 text-right" v-show="showReset">
+            <button type="button"
+                    @click="reset"
+                    class="button is-info rounded-full text-base"
+            >
+                Reset Demo
+            </button>
+        </div>
+
         <vue-context ref="menu">
             <ul slot-scope="child" v-if="child.data">
                 <li @click="alertName(child.data.name)">Alert name</li>
@@ -23,18 +32,26 @@
 <script>
     import { VueContext } from 'vue-context';
 
+    const items = [
+        'Cras justo odio',
+        'Dapibus ac facilisis in',
+        'Morbi leo risus',
+        'Porta ac consectetur ac',
+        'Vestibulum at eros'
+    ];
+
     export default {
         components: { VueContext },
 
+        computed: {
+            showReset () {
+                return this.items.length < items.length;
+            }
+        },
+
         data () {
             return {
-                items: [
-                    'Cras justo odio',
-                    'Dapibus ac facilisis in',
-                    'Morbi leo risus',
-                    'Porta ac consectetur ac',
-                    'Vestibulum at eros'
-                ]
+                items: [...items]
             };
         },
 
@@ -45,6 +62,10 @@
 
             remove (index) {
                 this.$delete(this.items, index);
+            },
+
+            reset () {
+                this.items = [...items];
             }
         }
     };

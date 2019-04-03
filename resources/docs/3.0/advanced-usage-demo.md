@@ -28,6 +28,15 @@ See demos of some more advanced usage of the context menu.
             </tbody>
         </table>
 
+        <div class="my-4 text-right" v-show="showReset">
+            <button type="button"
+                    @click="reset"
+                    class="button is-info rounded-full text-base"
+            >
+                Reset Demo
+            </button>
+        </div>
+
         <vue-context ref="menu">
             <ul slot-scope="child" v-if="child.data">
                 <li @click="alertName(child.data.name)">Alert name</li>
@@ -40,18 +49,26 @@ See demos of some more advanced usage of the context menu.
 <script>
     import { VueContext } from 'vue-context';
 
+    const items = [
+        'Cras justo odio',
+        'Dapibus ac facilisis in',
+        'Morbi leo risus',
+        'Porta ac consectetur ac',
+        'Vestibulum at eros'
+    ];
+
     export default {
         components: { VueContext },
 
+        computed: {
+            showReset () {
+                return this.items.length < items.length;
+            }
+        },
+
         data () {
             return {
-                items: [
-                    'Cras justo odio',
-                    'Dapibus ac facilisis in',
-                    'Morbi leo risus',
-                    'Porta ac consectetur ac',
-                    'Vestibulum at eros'
-                ]
+                items: [...items]
             };
         },
 
@@ -62,6 +79,10 @@ See demos of some more advanced usage of the context menu.
 
             remove (index) {
                 this.$delete(this.items, index);
+            },
+
+            reset () {
+                this.items = [...items];
             }
         }
     };
@@ -95,7 +116,7 @@ to allow you to add or remove the color from the array of selected colors.
         <h5 class="my-4">
             Selected colors:
         </h5>
-        <code class="d-block mb-3">@{{ selectedColors }}</code>
+        <code class="d-block mb-3" style="line-height:35px">@{{ selectedColors }}</code>
 
         <vue-context ref="menu">
             <ul slot-scope="child" v-if="child.data">
