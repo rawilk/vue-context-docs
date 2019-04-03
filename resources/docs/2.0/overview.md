@@ -9,16 +9,13 @@
 ## Overview
 
 `vue-context` provides a simple yet flexible context menu for Vue. It is styled for the standard `<ul>` tag, but any menu template can be used.
-The only dependencies the menu has are Vue and vue-clickaway, so the majority of styling is up to you, and any of the package
+The only dependency the menu has is Vue, so the majority of styling is up to you, and any of the package
 styles for the menu can easily be overridden.
 <br><br>
-The menu disappears when you expect by utilizing `vue-clickaway` and it also optionally disappears when clicked on.
+The menu disappears when you expect by using the `onblur` event and also disappears when clicked on.
 
 <br>
 ![Screenshot](https://github.com/rawilk/vue-context/raw/master/screenshot.png)
-
-> {danger} Warning: The API has changed in the latest major release. If you're still using the old version, please refer
-to the previous version's documentation here: <code>https://vue-context.randallwilk.com/docs/2.0/overview</code>
 
 <a name="license"></a>
 ## License

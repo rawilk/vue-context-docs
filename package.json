@@ -11,7 +11,9 @@
         "build-basic-usage-demo": "cd larecipe-components/BasicUsageDemo && npm run dev",
         "build-basic-usage-demo-prod": "cd larecipe-components/BasicUsageDemo && npm run prod",
         "build-demos": "cd larecipe-components/Demos && npm run dev",
-        "build-demos-prod": "cd larecipe-components/Demos && npm run prod"
+        "build-demos-prod": "cd larecipe-components/Demos && npm run prod",
+        "build-demos-v2": "cd larecipe-components/DemosV2 && npm run dev",
+        "build-demos-v2-prod": "cd larecipe-components/DemosV2 && npm run prod"
     },
     "devDependencies": {
         "axios": "^0.18",
