@@ -18,6 +18,6 @@
     "dependencies": {
         "node-sass": "^4.11.0",
         "vue": "^2.6.10",
-        "vue-context": "^3.4.0"
+        "vue-context": "^3.4.1"
     }
 }
