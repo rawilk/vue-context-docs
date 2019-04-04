@@ -112,7 +112,7 @@ The `open` event is emitted with the context menu is shown and receives the foll
 ```html
 <template>
     <div>
-        <p @click.prevent="$refs.menu.open($event, { foo: 'bar' })">
+        <p @contextmenu.prevent="$refs.menu.open($event, { foo: 'bar' })">
             Right click on me
         </p>
         
