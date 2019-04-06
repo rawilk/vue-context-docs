@@ -4,6 +4,7 @@ All notable changes to this project will be documented here.
 
 ---
 
+- [3.4.2](#3.4.2)
 - [3.4.1](#3.4.1)
 - [3.4.0](#3.4.0)
 - [3.3.1](#3.3.1)
@@ -15,6 +16,14 @@ All notable changes to this project will be documented here.
 - [3.0.0](#3.0.0)
 - [2.0.1](#2.0.1)
 - [2.0.0](#2.0.0)
+
+<a name="3.4.2"></a>
+## [3.4.2](https://github.com/rawilk/vue-context/releases/tag/3.4.2)
+
+Released 2019-04-05
+
+### Bug Fixes 3.4.2
+- Only add scroll event listener on `closeOnScroll` prop value change if the menu is open.
 
 <a name="3.4.1"></a>
 ## [3.4.1](https://github.com/rawilk/vue-context/releases/tag/3.4.1)
