@@ -22,7 +22,7 @@ All notable changes to this project will be documented here.
 
 Released 2019-04-05
 
-### Bug Fixes 3.4.2
+### Bug fixes 3.4.2
 - Only add scroll event listener on `closeOnScroll` prop value change if the menu is open.
 
 <a name="3.4.1"></a>
