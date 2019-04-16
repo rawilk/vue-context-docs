@@ -18,6 +18,10 @@ return [
         'domain'   => env('MAILGUN_DOMAIN'),
         'secret'   => env('MAILGUN_SECRET'),
         'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
+    ],
+
+    'google_adsense' => [
+        'id' => env('GOOGLE_ADSENSE_ID')
     ]
 
 ];
