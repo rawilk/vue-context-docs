@@ -15,7 +15,7 @@ styles for the menu can easily be overridden.
 The menu disappears when you expect by using the `onblur` event and also disappears when clicked on.
 
 <br>
-![Screenshot](https://github.com/rawilk/vue-context/blob/3.4.2/screenshot.png)
+![Screenshot](/images/screenshot.png)
 
 <a name="license"></a>
 ## License
