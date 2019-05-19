@@ -1,10 +1,12 @@
 <template>
     <div class="mt-4">
         <div class="mb-4">
-            <label>
-                <input type="checkbox" v-model="closeOnScroll">
-                Close on Scroll
-            </label>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" id="close-on-scroll" class="custom-control-input" v-model="closeOnScroll">
+                <label for="close-on-scroll" class="custom-control-label">
+                    Close on Scroll
+                </label>
+            </div>
         </div>
 
         <table class="table-left border-collapse shadow-none">

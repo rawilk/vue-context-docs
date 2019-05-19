@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b3cab7bc967d6c7bf0054da6faf3205",
+    "content-hash": "25e7f6ecb2a50069446605ab939b2414",
     "packages": [
         {
             "name": "binarytorch/larecipe",
@@ -1561,6 +1561,40 @@
             "autoload": {
                 "psr-4": {
                     "Rawilk\\DemosV2\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A LaRecipe asset.",
+            "keywords": [
+                "laravel",
+                "larecipe"
+            ]
+        },
+        {
+            "name": "rawilk/demos-v4",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./larecipe-components/DemosV4",
+                "reference": "9bb57b5f1f1c4a58c7bf8b3fc7059ba29fe9a9e1",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rawilk\\DemosV4\\AssetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rawilk\\DemosV4\\": "src/"
                 }
             },
             "license": [
@@ -4630,7 +4664,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "rawilk/demos-v4": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

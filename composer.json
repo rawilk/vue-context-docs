@@ -14,7 +14,8 @@
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
         "rawilk/demos": "*",
-        "rawilk/demos-v2": "*"
+        "rawilk/demos-v2": "*",
+        "rawilk/demos-v4": "dev-master"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -66,6 +67,10 @@
         {
             "type": "path",
             "url": "./larecipe-components/DemosV2"
+        },
+        {
+            "type": "path",
+            "url": "./larecipe-components/DemosV4"
         }
     ]
 }

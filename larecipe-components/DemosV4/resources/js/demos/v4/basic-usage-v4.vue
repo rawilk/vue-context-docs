@@ -1,14 +1,5 @@
 <template>
-    <div class="mt-4">
-        <div class="mb-4">
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" id="close-on-click" class="custom-control-input" v-model="closeOnClick">
-                <label for="close-on-click" class="custom-control-label">
-                    Close on Click
-                </label>
-            </div>
-        </div>
-
+    <div>
         <table class="table-left border-collapse shadow-none">
             <tbody>
                 <tr v-for="(item, index) in items"
@@ -20,12 +11,17 @@
             </tbody>
         </table>
 
-        <vue-context ref="menu" :close-on-click="closeOnClick">
-            <ul>
-                <li>
-                    {{ closeOnClick ? 'I will close on click' : 'I will stay open on click' }}
-                </li>
-            </ul>
+        <vue-context ref="menu">
+            <li>
+                <a href="#" @click.prevent="onClick($event.target.innerText)">
+                    Do something
+                </a>
+            </li>
+            <li>
+                <a href="#" @click.prevent="onClick($event.target.innerText)">
+                    Do something else
+                </a>
+            </li>
         </vue-context>
     </div>
 </template>
@@ -38,7 +34,6 @@
 
         data () {
             return {
-                closeOnClick: false,
                 items: [
                     'Cras justo odio',
                     'Dapibus ac facilisis in',
@@ -47,6 +42,12 @@
                     'Vestibulum at eros'
                 ]
             };
+        },
+
+        methods: {
+            onClick (text) {
+                alert(`You clicked on: "${text}"`);
+            }
         }
     };
 </script>

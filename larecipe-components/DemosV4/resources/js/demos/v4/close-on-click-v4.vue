@@ -21,11 +21,11 @@
         </table>
 
         <vue-context ref="menu" :close-on-click="closeOnClick">
-            <ul>
-                <li>
+            <li>
+                <a>
                     {{ closeOnClick ? 'I will close on click' : 'I will stay open on click' }}
-                </li>
-            </ul>
+                </a>
+            </li>
         </vue-context>
     </div>
 </template>

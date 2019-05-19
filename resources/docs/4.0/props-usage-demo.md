@@ -13,7 +13,7 @@ Further control the behavior of the menu through its props.
 > {info} If `closeOnClick` is set to `false`, the context menu will not automatically close when clicked on.
 You can toggle this feature on and off in this demo by using the checkbox below.
 
-<close-on-click-v3></close-on-click-v3>
+<close-on-click-v4></close-on-click-v4>
 
 ```html
 <template>
@@ -39,11 +39,11 @@ You can toggle this feature on and off in this demo by using the checkbox below.
         </table>
 
         <vue-context ref="menu" :close-on-click="closeOnClick">
-            <ul>
-                <li>
+            <li>
+                <a>
                     @{{ closeOnClick ? 'I will close on click' : 'I will stay open on click' }}
-                </li>
-            </ul>
+                </a>
+            </li>
         </vue-context>
     </div>
 </template>
@@ -76,7 +76,7 @@ You can toggle this feature on and off in this demo by using the checkbox below.
 > {info} If `closeOnScroll` is set to `true`, the context menu will close automatically when the window
 is scrolled. You can toggle this feature on and off in this demo by using the checkbox below.
 
-<close-on-scroll-v3></close-on-scroll-v3>
+<close-on-scroll-v4></close-on-scroll-v4>
 
 ```html
 <template>
@@ -102,11 +102,11 @@ is scrolled. You can toggle this feature on and off in this demo by using the ch
         </table>
 
         <vue-context ref="menu" :close-on-scroll="closeOnScroll">
-            <ul>
-                <li>
+            <li>
+                <a>
                     @{{ closeOnScroll ? 'I will hide when the window is scrolled' : 'I will stay visible when the window is scrolled' }}
-                </li>
-            </ul>
+                </a>
+            </li>
         </vue-context>
     </div>
 </template>
