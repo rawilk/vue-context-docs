@@ -12,7 +12,7 @@ Quick reference for the component.
     <div>
         <code>vue-context</code>
     </div>
-    <larecipe-button tag="a" href="https://github.com/rawilk/vue-context/blob/master/src/vue-context.vue" target="_blank" radius="full" type="info">
+    <larecipe-button tag="a" href="https://github.com/rawilk/vue-context/blob/master/src/js/vue-context.vue" target="_blank" radius="full" type="info">
     view source
     </larecipe-button>
 </div> 
