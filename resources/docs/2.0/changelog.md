@@ -4,6 +4,7 @@ All notable changes to this project will be documented here.
 
 ---
 
+- [4.0.1](#4.0.1)
 - [4.0.0](#4.0.0)
 - [3.4.2](#3.4.2)
 - [3.4.1](#3.4.1)
@@ -17,6 +18,14 @@ All notable changes to this project will be documented here.
 - [3.0.0](#3.0.0)
 - [2.0.1](#2.0.1)
 - [2.0.0](#2.0.0)
+
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/rawilk/vue-context/releases/tag/4.0.1)
+
+Released 2019-06-03
+
+## Bug Fixes 4.0.1
+- Always emit the close event on click. See issue [#23](https://github.com/rawilk/vue-context/issues/23) 
 
 <a name="4.0.0"></a>
 ## [4.0.0](https://github.com/rawilk/vue-context/releases/tag/4.0.0)
