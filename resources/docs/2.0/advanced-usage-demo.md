@@ -12,7 +12,9 @@ See demos of some more advanced usage of the context menu.
 
 > {info} Right click on each item to see a more customized context menu appear for each item.
 
-<advanced-demo-1-v2></advanced-demo-1-v2>
+<div class="old-v-context">
+    <advanced-demo-1-v2></advanced-demo-1-v2>
+</div>
 
 ```html
 <template>

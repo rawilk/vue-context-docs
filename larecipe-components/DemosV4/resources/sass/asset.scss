@@ -66,3 +66,15 @@ ul.v-context > li {
         background: no-repeat 50%/50% 50%;
     }
 }
+
+.old-v-context {
+    .v-context {
+        &,
+        & li,
+        & li a {
+            &:focus {
+                outline: -webkit-focus-ring-color auto 5px;
+            }
+        }
+    }
+}

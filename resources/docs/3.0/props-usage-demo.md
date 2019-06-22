@@ -13,7 +13,9 @@ Further control the behavior of the menu through its props.
 > {info} If `closeOnClick` is set to `false`, the context menu will not automatically close when clicked on.
 You can toggle this feature on and off in this demo by using the checkbox below.
 
-<close-on-click-v3></close-on-click-v3>
+<div class="old-v-context">
+    <close-on-click-v3></close-on-click-v3>
+</div>
 
 ```html
 <template>
@@ -76,7 +78,9 @@ You can toggle this feature on and off in this demo by using the checkbox below.
 > {info} If `closeOnScroll` is set to `true`, the context menu will close automatically when the window
 is scrolled. You can toggle this feature on and off in this demo by using the checkbox below.
 
-<close-on-scroll-v3></close-on-scroll-v3>
+<div class="old-v-context">
+    <close-on-scroll-v3></close-on-scroll-v3>
+</div>
 
 ```html
 <template>

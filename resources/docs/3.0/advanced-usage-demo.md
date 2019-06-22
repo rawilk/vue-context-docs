@@ -12,7 +12,9 @@ See demos of some more advanced usage of the context menu.
 
 > {info} Right click on each item to see a more customized context menu appear for each item.
 
-<advanced-demo-1-v3></advanced-demo-1-v3>
+<div class="old-v-context">
+    <advanced-demo-1-v3></advanced-demo-1-v3>
+</div>
 
 ```html
 <template>
@@ -95,7 +97,9 @@ See demos of some more advanced usage of the context menu.
 > {info} Right click on each of the colors to have a context menu appear
 to allow you to add or remove the color from the array of selected colors.
 
-<advanced-demo-2-v3></advanced-demo-2-v3>
+<div class="old-v-context">
+    <advanced-demo-2-v3></advanced-demo-2-v3>
+</div>
 
 <br>
 

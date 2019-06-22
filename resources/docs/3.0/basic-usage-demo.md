@@ -11,7 +11,9 @@ Explore the basics of the context menu through this basic usage demo.
 
 > {info} Right click on each item to open the context menu.
 
-<basic-usage-v3></basic-usage-v3>
+<div class="old-v-context">
+    <basic-usage-v3></basic-usage-v3>
+</div>
 
 ```html
 <template>
