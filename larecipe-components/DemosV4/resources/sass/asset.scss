@@ -69,6 +69,10 @@ ul.v-context > li {
 
 .old-v-context {
     .v-context {
+        border-radius: 0;
+        box-sizing: unset;
+        min-width: unset;
+
         &,
         & li,
         & li a {
