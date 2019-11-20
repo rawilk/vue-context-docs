@@ -12,9 +12,10 @@ class AssetServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        LaRecipe::style('demos-v5', __DIR__ . '/../dist/css/asset.css');
+
         if (Docs::isVersion('5.0')) {
             LaRecipe::script('demos-v5', __DIR__ . '/../dist/js/asset.js');
-            LaRecipe::style('demos-v5', __DIR__ . '/../dist/css/asset.css');
         }
     }
 }
