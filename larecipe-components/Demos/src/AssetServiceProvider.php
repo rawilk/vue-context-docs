@@ -2,6 +2,7 @@
 
 namespace Rawilk\Demos;
 
+use App\Helpers\Docs;
 use BinaryTorch\LaRecipe\LaRecipe;
 use Illuminate\Support\ServiceProvider;
 
@@ -14,7 +15,9 @@ class AssetServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        LaRecipe::script('demos', __DIR__ . '/../dist/js/asset.js');
+        if (Docs::isVersion('2.0') || Docs::isVersion('3.0')) {
+            LaRecipe::script('demos', __DIR__ . '/../dist/js/asset.js');
+        }
     }
 
     /**

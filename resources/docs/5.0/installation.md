@@ -13,7 +13,7 @@ Installing `vue-context` is quick and simple. Follow these instructions to have 
 Install via npm
 
 ```bash
-npm i vue-context@4.0.3
+npm i vue-context
 ```
 
 <a name="usage"></a>
@@ -23,7 +23,10 @@ Import the component and use it in your app.
 
 ```js
 import Vue from 'vue';
-import { VueContext } from 'vue-context';
+import VueContext from 'vue-context';
+
+// Or import using the named export
+// import { VueContext } from 'vue-context';
 
 new Vue({
     components: {
@@ -36,6 +39,17 @@ new Vue({
         }
     }
 }).$mount('#app');
+```
+
+<br>
+For styling, you will need to import the components styles into your own stylesheets, or into your javascript.
+It's recommended to import into a stylesheet, however. If you're using sass, you can do the following:
+
+```sass
+@import '~vue-context/src/sass/vue-context';
+
+// Or
+// @import '~vue-context/dist/css/vue-context.css';
 ```
 
 <br>
@@ -52,10 +66,10 @@ Next add an element to the page that will trigger the context menu to appear, an
     
     <vue-context ref="menu">
         <li>
-            <a href="#" @click.prevent="onClick($event.target.innerText)">Option 1</a>
+            <a @click.prevent="onClick($event.target.innerText)">Option 1</a>
         </li>
         <li>
-            <a href="#" @click.prevent="onClick($event.target.innerText)">Option 2</a>
+            <a @click.prevent="onClick($event.target.innerText)">Option 2</a>
         </li>
     </vue-context>
     

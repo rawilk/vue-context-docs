@@ -2,6 +2,7 @@
 
 namespace Rawilk\DemosV4;
 
+use App\Helpers\Docs;
 use BinaryTorch\LaRecipe\LaRecipe;
 use Illuminate\Support\ServiceProvider;
 
@@ -14,8 +15,11 @@ class AssetServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        LaRecipe::script('demos-v4', __DIR__ . '/../dist/js/asset.js');
         LaRecipe::style('demos-v4', __DIR__ . '/../dist/css/asset.css');
+
+        if (Docs::isVersion('4.0')) {
+            LaRecipe::script('demos-v4', __DIR__ . '/../dist/js/asset.js');
+        }
     }
 
     /**

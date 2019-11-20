@@ -13,7 +13,7 @@ Installing `vue-context` is quick and simple. Follow these instructions to have 
 Install via npm
 
 ```bash
-npm i vue-context
+npm i vue-context@3.4.2
 ```
 
 <a name="usage"></a>
