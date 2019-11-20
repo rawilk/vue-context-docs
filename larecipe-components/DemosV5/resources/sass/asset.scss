@@ -1,3 +1,8 @@
 li > a {
     cursor: pointer;
 }
+
+.documentation > ul:first-of-type {
+    overflow: auto;
+    max-height: calc(100vh - 250px);
+}
