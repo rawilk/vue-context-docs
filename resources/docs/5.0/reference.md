@@ -34,6 +34,7 @@ Quick reference for the component.
 | `lazy` | Boolean | `false` | If set to `true`, context menu will be rendered with a `v-if` instead of `v-show`. |
 | `itemSelector` | Array, String | <code style="line-height:32px;">['.v-context-item', '.v-context > li > a']</code> | The selector of the menu items the menu will use to look for to set accessibility attributes and for keyboard navigation. |
 | `role` | String | `menu` | Used for the `role` attribute on the context menu. |
+| `subMenuOffset` | Number | 10 | Specify the offset in pixels of the submenus. |
 | `tag` | String | `ul` | Used as the root element of the context menu. |
 
 <a name="events"></a>
