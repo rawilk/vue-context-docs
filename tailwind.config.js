@@ -1,0 +1,21 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
+module.exports = {
+  purge: [
+      './resources/views/**/*.blade.php',
+      './resources/docs/**/*.md',
+  ],
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+            },
+        },
+    },
+  variants: {},
+  plugins: [
+      require('tailwindcss'),
+      require('autoprefixer'),
+      require('@tailwindcss/ui'),
+  ],
+}
