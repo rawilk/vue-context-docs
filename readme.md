@@ -1,3 +1,3 @@
 # vue-context Documentation
 
-Hosted here: [https://vue-context.com](vue-context docs site)
+Hosted here: [https://vue-context.com](docs site)
