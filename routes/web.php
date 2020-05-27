@@ -3,8 +3,6 @@
 use App\Http\Controllers\DocsController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('{doc}', DocsController::class);
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/docs');
+Route::redirect('/docs', '/docs/overview');
+Route::get('docs/{doc}', DocsController::class);
