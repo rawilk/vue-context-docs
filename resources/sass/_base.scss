@@ -1,0 +1,197 @@
+/* purgecss start ignore */
+body {
+    font-size: 17px;
+}
+
+.svg {
+    height: 1em;
+    margin-top: -4px;
+    pointer-events:none;
+    vertical-align: middle;
+    width: 1em;
+}
+
+.svg .outline {
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+// Content lists
+.content {
+    li { @apply .mb-3; }
+    li:last-child { @apply .mb-0; }
+    ul { @apply .list-none; }
+    li {
+        ul,
+        ol {
+            @apply .my-0 .ml-4 .pt-1;
+            li { @apply .mb-1; }
+        }
+    }
+}
+
+.changelog {
+    ul {
+        list-style-type: disc;
+        padding-left: 3rem;
+    }
+}
+
+ul { @apply .list-disc; }
+ol { @apply .list-decimal; }
+
+a {
+    @apply .font-semibold;
+    @apply .no-underline;
+    @apply .text-blue-700;
+
+    &:hover {
+        @apply .text-blue-800;
+    }
+}
+
+blockquote {
+    @apply .border-blue-300;
+    @apply .border-l-4;
+    @apply .font-normal;
+    @apply .italic;
+    @apply .my-8;
+    @apply .pl-6;
+    @apply .text-gray-500;
+    @apply .text-lg;
+}
+
+code {
+    @apply .bg-gray-300;
+    @apply .px-1;
+    @apply .py-px;
+    @apply .rounded;
+    font-size: 0.85em;
+}
+
+code.hljs {
+    @apply .bg-transparent;
+    @apply .p-0;
+
+    .hljs-comment,
+    .hljs-keyword,
+    .hljs-meta {
+        @apply .font-normal;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply .leading-tight;
+    @apply .mb-4;
+    @apply .mt-8;
+    @apply .text-blue-900;
+    @apply .font-display;
+
+    &:first-child {
+        @apply .mt-0;
+    }
+}
+
+h1 {
+    @apply .font-extrabold;
+    @apply .text-5xl;
+}
+
+h2 {
+    @apply .font-bold;
+    @apply .text-4xl;
+}
+
+h2::before {
+    content: " ";
+    @apply block;
+    @apply w-full;
+    @apply mb-8;
+    height: 12px;
+    border-top: 2px solid #ccc;
+}
+
+h2:first-child::before {
+    @apply hidden;
+}
+
+h3 {
+    @apply .font-bold;
+    @apply .text-2xl;
+}
+
+h4 {
+    @apply .font-normal;
+    @apply .text-2xl;
+}
+
+h5 {
+    @apply .font-normal;
+    @apply .text-xl;
+}
+
+h6 {
+    @apply .font-light;
+    @apply .text-lg;
+}
+
+hr {
+    @apply .border-b;
+    @apply .border-blue-400;
+    @apply .my-12;
+    @apply .rounded-full;
+}
+
+li {
+    ul,
+    ol {
+        @apply .my-0;
+    }
+}
+
+ol,
+ul {
+    @apply .my-4;
+}
+
+p {
+    @apply .my-6;
+}
+
+pre {
+    @apply .leading-loose;
+    @apply .my-6;
+    @apply .overflow-x-auto;
+    @apply .text-base;
+    @apply .p-0;
+
+    code {
+        @apply .bg-transparent;
+        @apply .block;
+        @apply .p-4;
+    }
+}
+
+table {
+    @apply w-full text-left rounded-lg overflow-hidden;
+
+    th {
+        @apply text-sm font-semibold text-gray-700 p-2 bg-gray-300;
+    }
+
+    tr:first-child td {
+        @apply border-0;
+    }
+
+    td {
+        @apply p-2 border-t text-sm bg-gray-100 border-gray-400;
+    }
+}
+/* purgecss end ignore */
