@@ -13,6 +13,7 @@ You can toggle this feature on and off in this demo by using the checkbox below.
 
 <close-on-click></close-on-click>
 
+<div v-pre>
 @component('components.code', ['lang' => 'html'])
 @verbatim
 <template>
@@ -85,6 +86,7 @@ You can toggle this feature on and off in this demo by using the checkbox below.
 </script>
 @endverbatim
 @endcomponent
+</div>
 
 <a name="close-on-scroll"></a>
 ## Close On Scroll
@@ -96,6 +98,7 @@ is scrolled. You can toggle this feature on and off in this demo by using the ch
 
 <close-on-scroll></close-on-scroll>
 
+<div v-pre>
 @component('components.code', ['lang' => 'html'])
 @verbatim
 <template>
@@ -168,3 +171,4 @@ is scrolled. You can toggle this feature on and off in this demo by using the ch
 </script>
 @endverbatim
 @endcomponent
+</div>

@@ -6,5 +6,13 @@ module.exports = {
         },
     },
     variants: {},
-    plugins: []
+    plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+    ],
+    purge: [
+        './resources/views/**/*.php',
+        './resources/js/**/*.vue',
+        './resources/js/**/*.js',
+    ]
 }
