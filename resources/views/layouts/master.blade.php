@@ -4,7 +4,7 @@
 <header class="relative flex justify-between items-center h-24 py-4 px-4 bg-white" role="banner">
     <div class="flex items-center container mx-auto">
         <div class="flex items-center">
-            <a href="/" title="{{ config('app.name') }} home" class="items-center inline-flex">
+            <a href="/" aria-label="{{ config('app.name') }} home" title="{{ config('app.name') }} home" class="items-center inline-flex">
                 {{ config('app.name') }}
             </a>
         </div>
