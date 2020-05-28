@@ -1,5 +1,3 @@
-{{--# vue-context--}}
-
 <a name="overview"></a>
 ## Overview
 
