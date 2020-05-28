@@ -1,3 +1,13 @@
+<a name="5.2.0"></a>
+## [5.2.0](https://github.com/rawilk/vue-context/releases/tags/5.2.0)
+
+Released 2020-05-28
+
+### Added
+- Prop `useScrollHeight` to use element scroll height instead of offset height ([#55](https://github.com/rawilk/vue-context/pull/55)).
+- Prop `useScrollWidth` to use element scroll width instead of offset width ([#55](https://github.com/rawilk/vue-context/pull/55)).
+- Props `heightOffset` and `widthOffset` to specify distance from edge of screen ([#55](https://github.com/rawilk/vue-context/pull/55)).
+
 <a name="5.1.0"></a>
 ## [5.1.0](https://github.com/rawilk/vue-context/releases/tag/5.1.0)
 
