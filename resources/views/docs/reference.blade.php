@@ -20,6 +20,10 @@
 | `role` | String | `menu` | Used for the `role` attribute on the context menu. |
 | `subMenuOffset` | Number | `10` | Specify the offset in pixels of the submenus. |
 | `tag` | String | `ul` | Used as the root element of the context menu. |
+| `heightOffset` | Number | `25` | Specify distance from menu to top/bottom of screen. |
+| `widthOffset` | Number | `25` | Specify distance from menu to left of screen. |
+| `useScrollHeight` | Boolean | `false` | Use the menu's scroll height instead of offset height to calculate its positioning. |
+| `useScrollWidth` | Boolean | `false` | Use the menu's scroll width instead of offset width to calculate its positioning. |
 @endcomponent
 
 ### Events
