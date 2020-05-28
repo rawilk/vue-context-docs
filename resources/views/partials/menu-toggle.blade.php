@@ -3,7 +3,7 @@
     @@set-nav-open.window="open = $event.detail"
     aria-label="Main Menu"
     x-init="$watch('open', value => { $dispatch('set-nav-open', value) })"
-    class="flex items-center justify-center h-10 w-10 px-2 border rounded-full bg-gray-100 border-blue lg:hidden focus:outline-none"
+    class="flex items-center justify-center h-10 w-10 px-2 border rounded-full bg-gray-100 border-blue md:hidden focus:outline-none"
     @click="open = ! open"
 >
     <svg
