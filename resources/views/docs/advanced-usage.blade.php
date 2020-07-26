@@ -17,7 +17,7 @@ and access it within a [scoped slot](https://vuejs.org/v2/guide/components.html#
 @component('components.code', ['lang' => 'html'])
 <template>
     <div>
-        <p @contextmenu.prevent="$refs.menu.open($event, { foo: 'bar' }">
+        <p @contextmenu.prevent="$refs.menu.open($event, { foo: 'bar' })">
             Right click on me
         </p>
 
