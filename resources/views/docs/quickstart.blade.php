@@ -21,9 +21,6 @@ Import the component and use it in your app.
 import Vue from 'vue';
 import VueContext from 'vue-context';
 
-// Or import using the named export
-// import { VueContext } from 'vue-context';
-
 new Vue({
     components: {
         VueContext

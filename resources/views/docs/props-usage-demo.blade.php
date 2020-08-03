@@ -149,7 +149,7 @@ is scrolled. You can toggle this feature on and off in this demo by using the ch
 </template>
 
 <script>
-    import { VueContext } from 'vue-context';
+    import VueContext from 'vue-context';
     import 'vue-context/src/sass/vue-context.scss';
 
     export default {

@@ -1,3 +1,12 @@
+<a name="6.0.0"></a>
+## [6.0.0](https://github.com/rawilk/vue-context/releases/6.0.0)
+
+Released 2020-08-03
+
+### Changed
+- **Breaking Change:** Remove named export from entry point ([#60](https://github.com/rawilk/vue-context/issues/60)).
+- Change submenu chevron character code in style sheet.
+
 <a name="5.2.0"></a>
 ## [5.2.0](https://github.com/rawilk/vue-context/releases/tags/5.2.0)
 
