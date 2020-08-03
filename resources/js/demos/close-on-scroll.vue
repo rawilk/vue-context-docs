@@ -46,7 +46,7 @@
 </template>
 
 <script>
-    import { VueContext } from 'vue-context';
+    import VueContext from 'vue-context';
     import 'vue-context/src/sass/vue-context.scss';
 
     export default {
