@@ -24,7 +24,7 @@
         "alpinejs": "^2.5.0",
         "animateplus": "^2.1.1",
         "prism-themes": "^1.4.0",
-        "prismjs": "^1.20.0",
+        "prismjs": "^1.21.0",
         "tailwindcss": "^1.6.1",
         "vue": "^2.6.11",
         "vue-context": "^6.0.0",
