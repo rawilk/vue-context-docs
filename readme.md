@@ -1,5 +1,7 @@
 # vue-context Documentation
 
+## Note: This repository is archived now, as the docs for vue-context have moved to [the vue-context](https://github.com/rawilk/vue-context/tree/master/docs) repository.
+
 Hosted here: https://vue-context.com
 
 ### Contribution Notes
